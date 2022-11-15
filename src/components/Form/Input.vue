@@ -29,9 +29,9 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {computed} from 'vue'
-import Label from '@/Shared/Form/Label.vue'
+import Label from '@/components/Form/Label.vue'
 
 const props = defineProps({
   label: String,

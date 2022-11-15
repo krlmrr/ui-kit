@@ -69,7 +69,7 @@
   </Combobox>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {computed, ref} from 'vue'
 import {CheckIcon, ArrowsUpDownIcon} from '@heroicons/vue/24/solid'
 import {
@@ -79,7 +79,8 @@ import {
   ComboboxOption,
   ComboboxOptions,
 } from '@headlessui/vue'
-import Label from '@/Shared/Form/Label.vue'
+
+import Label from '@/components/Form/Label.vue'
 
 const props = defineProps(['options', 'label', 'keys'])
 

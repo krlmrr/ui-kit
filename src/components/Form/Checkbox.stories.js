@@ -3,7 +3,6 @@ import Checkbox from "./Checkbox.vue"
 export default {
     title: "Form/Checkbox",
     component: "Checkbox",
-    
 }
 
 const Template = (args) => ({
