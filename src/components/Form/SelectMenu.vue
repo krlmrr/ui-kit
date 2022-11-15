@@ -6,19 +6,19 @@
       </Label>
 
       <Label
-          class="text-sm text-gray-400"
-          v-if="required"
+        class="text-sm text-gray-400"
+        v-if="required"
       >
         Required
       </Label>
     </div>
 
     <select
-        :id='label'
-        :name='label'
-        class='mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300
-      focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm rounded-md'
-        v-model='selectedOption'
+      :id='label'
+      :name='label'
+      class='mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300
+        focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm rounded-md'
+      v-model='selectedOption'
     >
       <option></option>
 

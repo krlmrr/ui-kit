@@ -6,8 +6,8 @@
       </Label>
 
       <Label
-          class="text-sm text-gray-400"
-          v-if="required"
+        class="text-sm text-gray-400"
+        v-if="required"
       >
         Required
       </Label>
@@ -15,11 +15,11 @@
 
     <div class="mt-1">
       <input
-          class="w-full border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
-          :type="type"
-          :name="name"
-          v-model="inputValue"
-          :placeholder="placeholder"
+        class="w-full border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+        :type="type"
+        :name="name"
+        v-model="inputValue"
+        :placeholder="placeholder"
       />
     </div>
     

@@ -8,11 +8,12 @@ export default {
 const Template = (args) => ({
     components: { Toggle },
     setup: () => ({ args }),
-    template: '<Toggle v-bind="args"></Toggle>'
+    template: '<Toggle v-bind="args" v-model="args.value"></Toggle>'
 })
 
 export const Primary = Template.bind({})
 Primary.args = {
   label: 'Select a Driver',
-  subtext: 'This is subtext'
+  subtext: 'This is subtext',
+  value: false
 }

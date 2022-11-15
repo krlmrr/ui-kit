@@ -1,9 +1,9 @@
 <template>
   <Combobox
-      as="div"
-      v-model="selectedOption"
-      @update:modelValue="$emit('selected', selectedOption)"
-      class="m-2"
+    as="div"
+    v-model="selectedOption"
+    @update:modelValue="$emit('selected', selectedOption)"
+    class="m-2"
   >
     <div class="flex justify-between">
       <Label :for="label">
@@ -11,8 +11,8 @@
       </Label>
 
       <Label
-          class="text-sm text-gray-400"
-          v-if="required"
+        class="text-sm text-gray-400"
+        v-if="required"
       >
         Required
       </Label>
@@ -20,22 +20,22 @@
 
     <div class="relative mt-1">
       <ComboboxInput
-          class="w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 shadow-sm focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 sm:text-sm"
-          @change="query = $event.target.value"
-          autocomplete="off"
-          :display-value="
-          option =>
-            Object.keys(option).length !== 0
-              ? option.first_name + ' ' + option.last_name
-              : ''
+        class="w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 shadow-sm focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 sm:text-sm"
+        @change="query = $event.target.value"
+        autocomplete="off"
+        :display-value="
+        option =>
+          Object.keys(option).length !== 0
+            ? option.first_name + ' ' + option.last_name
+            : ''
         "
       />
       <ComboboxButton
-          class="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none"
+        class="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none"
       >
         <ArrowsUpDownIcon
-            class="h-5 w-5 text-gray-400"
-            aria-hidden="true"
+          class="h-5 w-5 text-gray-400"
+          aria-hidden="true"
         />
       </ComboboxButton>
 
@@ -60,15 +60,15 @@
             </span>
 
             <span
-                v-if="selected"
-                :class="[
+              v-if="selected"
+              :class="[
                 'absolute inset-y-0 right-0 flex items-center pr-4',
                 active ? 'text-white' : 'text-orange-600',
               ]"
             >
               <CheckIcon
-                  class="h-5 w-5"
-                  aria-hidden="true"
+                class="h-5 w-5"
+                aria-hidden="true"
               />
             </span>
           </li>
