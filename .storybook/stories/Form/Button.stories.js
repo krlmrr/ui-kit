@@ -1,9 +1,8 @@
-import Button from "./Button.vue"
+import Button from "@/components/Form/Button.vue"
 
 export default {
     title: "Form/Button",
     component: "Button",
-    
 }
 
 const Template = (args) => ({

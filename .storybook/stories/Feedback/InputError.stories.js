@@ -1,4 +1,4 @@
-import InputError from "./InputError.vue"
+import InputError from "@/components/Feedback/InputError.vue"
 
 export default {
     title: "Feedback/InputError",

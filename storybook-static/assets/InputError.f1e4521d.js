@@ -1,0 +1,2 @@
+import{w as r,v as t,o as s,a as o,b as a,t as n}from"./vue.esm-bundler.47a8975e.js";const c={class:"text-sm mx-3 my-2 text-red-600"},p={__name:"InputError",props:["errors"],setup(e){return(i,m)=>r((s(),o("div",null,[a("p",c,n(e.errors),1)],512)),[[t,e.errors]])}};p.__docgenInfo={exportName:"default",displayName:"InputError",description:"",tags:{},props:[{name:"errors",type:{name:"undefined"}}]};export{p as _};
+//# sourceMappingURL=InputError.f1e4521d.js.map

@@ -1,4 +1,4 @@
-import Checkbox from "./Checkbox.vue"
+import Checkbox from "@/components/Form/Checkbox.vue"
 
 export default {
     title: "Form/Checkbox",

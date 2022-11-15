@@ -1,0 +1,2 @@
+import{d as o,o as e,a,t as n,r as l}from"./vue.esm-bundler.47a8975e.js";const r={class:"block font-medium text-sm text-gray-700 mx-3"},d={key:0},m={key:1},c=o({__name:"Label",props:["value"],setup(t){return(s,p)=>(e(),a("label",r,[t.value?(e(),a("span",d,n(t.value),1)):(e(),a("span",m,[l(s.$slots,"default")]))]))}});c.__docgenInfo={exportName:"default",displayName:"Label",description:"",tags:{},props:[{name:"value",type:{name:"undefined"}}],slots:[{name:"default"}]};export{c as _};
+//# sourceMappingURL=Label.f617fa7d.js.map

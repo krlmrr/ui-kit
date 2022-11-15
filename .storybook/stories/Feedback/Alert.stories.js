@@ -1,9 +1,8 @@
-import Alert from "./Alert.vue"
+import Alert from "@/components/Feedback/Alert.vue"
 
 export default {
     title: "Feedback/Alert",
-    component: "Alert",
-    
+    component: "Alert",   
 }
 
 const Template = (args) => ({
