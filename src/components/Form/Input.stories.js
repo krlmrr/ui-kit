@@ -15,6 +15,6 @@ export const Primary = Template.bind({})
 Primary.args = {
   label: "Name",
   placeholder: "William Never",
-  require: false,
-  errors:''
+  required: false,
+  errors:'This is an error.'
 }

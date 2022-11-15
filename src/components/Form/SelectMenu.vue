@@ -1,11 +1,17 @@
 <template>
-  <div class='my-2 mx-2'>
-    <label
-        :for='label'
-        class='block text-sm font-medium text-gray-700 mx-3'
-    >
-      {{ label }}
-    </label>
+  <div class='m-2'>
+    <div class="flex justify-between">
+      <Label :for="label">
+        {{ label }}
+      </Label>
+
+      <Label
+          class="text-sm text-gray-400"
+          v-if="required"
+      >
+        Required
+      </Label>
+    </div>
 
     <select
         :id='label'
@@ -17,8 +23,8 @@
       <option></option>
 
       <option
-          v-for='option in options'
-          :value='option'
+        v-for='option in options'
+        :value='option'
       >
         {{ option.name }}
 
@@ -26,20 +32,23 @@
         {{ option.last_name }}
       </option>
     </select>
-
-    <p class="mt-2 text-orange-600">
-      {{ errors }}
-    </p>
-
+    
+    <InputError :errors="errors" />
+  
   </div>
+  
+
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {computed} from 'vue'
+import Label from '@/components/Form/Label.vue'
+import InputError from '@/components/Feedback/InputError.vue'
 
 const props = defineProps({
   label: String,
   errors: String,
+  required: Boolean,
   options: Array,
   modelValue: Object
 })

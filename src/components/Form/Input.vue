@@ -22,16 +22,15 @@
           :placeholder="placeholder"
       />
     </div>
-
-    <p class="mt-2 text-orange-600">
-      {{ errors }}
-    </p>
+    
+    <InputError :errors="errors" />
   </div>
 </template>
 
 <script setup lang="ts">
 import {computed} from 'vue'
 import Label from '@/components/Form/Label.vue'
+import InputError from '@/components/Feedback/InputError.vue'
 
 const props = defineProps({
   label: String,

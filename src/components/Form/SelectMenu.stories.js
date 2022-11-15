@@ -1,21 +1,21 @@
-import Combobox from "@/components/Form/Combobox.vue"
+import SelectMenu from "@/components/Form/SelectMenu.vue"
 
 export default {
-    title: "Form/Combobox",
-    component: "Combobox",
+    title: "Form/SelectMenu",
+    component: "SelectMenu",
 }
 
 const Template = (args) => ({
-    components: { Combobox },
+    components: { SelectMenu },
     setup: () => ({ args }),
-    template: '<Combobox v-bind="args" />'
+    template: '<SelectMenu v-bind="args"></SelectMenu>'
 })
 
 export const Primary = Template.bind({})
 Primary.args = {
-  label: "Select a Driver",
-  errors: "This is an error.",
+  label: 'Select a Driver',
   required: false,
+  errors: 'This is an error.',
   options: [
     {"id":17,"first_name":"Alexander","last_name":"Albon","number":23,"birthday":"1996-03-23","constructor_id":10,"country":"Thailand","position_last_season":17,"championship_points":0,"is_rookie":0,"new_to_constructor":0,"GPs_entered":345,"podiums":103,"all_time_wins":21,"number_of_times_picked":0,"profile_image":"/assets/drivers/Albon.jpg","bio":"Born in London but racing under the flag of Thailand, Alexander Albon’s first word was in fact Italian. That word was Ferrari – though it was with another Italian team that he got his big F1 break. <br><br>\n\nIdolising Michael Schumacher and dreaming of one day racing in Formula 1, the junior Albon was pipped to the 2016 GP3 title by a certain Charles Leclerc. He then left his great friendship with George Russell trackside as he took the 2018 Formula 2 title fight down to the wire.<br><br>\n\nGraduating to the F1 big league along with yet another contemporary – Lando Norris – in 2019, Albon did his talking on track with Toro Rosso in the opening races, earning a mid-season promotion to Red Bull Racing.<br><br>\n\nA stylish over-taker with a championship mentality, Albon was unfazed by partnering Max Verstappen for the second half of his rookie season, taking top-six finishes in eight of his nine 2019 races with Red Bull.<br><br>\n\nStaying in touch with the future champion proved tougher in 2020 and Red Bull dropped him from their race line-up. Crucially, though, Albon was retained as test and reserve driver, keeping him very much on team bosses’ radar, leading to his 2022 return to the grid with Williams.<br><br>\n\nLaidback and cheerful with a cheeky grin, the Thai racer is popular among his peers – not always easy in motorsport’s cauldron of competition – but you don’t succeed in Formula 1 by being popular. Albon’s challenge now is a big one – to make the most of a rare second F1 opportunity.\n","created_at":"2022-05-05T02:55:44.000000Z","updated_at":null},
     {"id":10,"first_name":"Fernando","last_name":"Alonso","number":14,"birthday":"1981-07-29","constructor_id":5,"country":"Spain","position_last_season":10,"championship_points":0,"is_rookie":0,"new_to_constructor":0,"GPs_entered":329,"podiums":97,"all_time_wins":32,"number_of_times_picked":0,"profile_image":"/assets/drivers/Alonso.jpg","bio":"Michael Schumacher was the undisputed king of Formula 1 in the early 2000s, picking up wins and championships at a rate that was simply unheard of at the time. It was going to take someone very special to topple the Ferrari legend from his throne – and that it was Fernando Alonso who did it, tells you all you need to know about the Spaniard. <br><br>\n\nFiercely competitive, Alonso is not shy about his talent, rating himself as 9/10 “in everything”, and few in the know would disagree, with his performances in F1 characterised by blistering speed, brilliant tactical thinking, exemplary race craft, a razor-sharp eye for detail and a relentless determination to win.<br><br>\n\nA serial record breaker in his early days, he was – at one time – F1’s youngest polesitter, race winner, world champion and double world champion as he gobbled up success with the Renault team. Even Alonso couldn’t continue that amazing run in his later career though, failing to add another title to his collection despite spells at McLaren and Ferrari.<br><br>\n\nBut after two years away from Formula 1 racing – and with two Le Mans wins in his pocket – Alonso returned with Alpine in 2021. And he has unfinished business with F1…","created_at":"2022-05-05T02:55:44.000000Z","updated_at":null},
